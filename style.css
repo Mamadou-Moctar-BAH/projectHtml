@@ -1,107 +1,111 @@
-/* 1. stylizing the body */
+/* 1. Stylisation du body */
 body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4; /* Page background color */
-    }
-     
-     /* 2. Stylizing the header */
-    header {
-    background-color: #4CAF50; /* Green background color */
-    color: white;
-    padding: 20px;
-    text-align: center;
-    }
-     
-     /* 3. nav styling */
-    nav {
-    background-color: #333; /* Dark gray background color */
-    padding: 10px;
-    }
-     
-    nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-    }
-     
-    nav ul li {
-    display: inline-block;
-    margin-right: 15px;
-    }
-     
-    nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    }
-     
-    nav ul li a:hover {
-    background-color: #ddd;
-    color: #333;
-    }
- 
-  /* 4. stylize hand */
-  main {
-    background-color: #ffffff; /* White background */
-    padding: 20px;
-    font-size: 18px;
-    color: #333;
-    }
-     
-     /* 5. style the footer */
-    footer {
-    background-color: #333; /* Dark gray background color */
-    color: white;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    }
-     
-     /* 6. Stylize the li tag */
-    li {
-    display: inline-block;
-    width: 30%;
-    margin-right: 10px;
-    text-align: center;
-    margin-bottom: 20px;
-    }
-     
-    li img {
-    max-width: 100%;
-    height: auto;
-    }
-     
-     /* 7. Stylize h1 tag */
-    h1 {
-    text-align: center;
-    font-family: 'Verdana', sans-serif;
-    color: #333;
-    }
-     
-     /* 8. Stylize p tag */
-    p {
-    line-height: 1.8;
-    color: #555;
-    }
-     
-     /* 9. Style h2 and h3 headings */
-    h2, h3 {
-    color: #333;
-    font-family: 'Georgia', serif;
-    }
-     
-     /* 10. Stylize links */
-    a {
-    color: #007BFF;
-    }
-     
-    a:hover {
-    text-decoration: underline;
-    color: #0056b3;
-    }
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Couleur de fond de la page */
+}
+
+/* 2. Stylisation du header */
+header {
+  background-color: #4CAF50; /* Couleur de fond verte */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* 3. Stylisation du lien de saut */
+.skip-link {
+  position: absolute;
+  top: -40px; /* Initialement caché */
+  left: 0;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* 4. Stylisation du main */
+main {
+  background-color: #ffffff; /* Fond blanc */
+  padding: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* 5. Stylisation du footer */
+footer {
+  background-color: #333; /* Fond gris foncé */
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* 6. Stylisation des titres h1 */
+h1 {
+  text-align: center;
+  font-family: 'Verdana', sans-serif;
+  color: #333;
+}
+
+/* 7. Stylisation des paragraphes */
+p {
+  line-height: 1.8;
+  color: #555;
+}
+
+/* 8. Stylisation des titres h2 et h3 */
+h2, h3 {
+  color: #333;
+  font-family: 'Georgia', serif;
+}
+
+/* 9. Stylisation des liens */
+a {
+  color: #007BFF;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* 10. Grid layout pour les images */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Trois colonnes égales */
+  gap: 20px;
+  justify-items: center;
+}
+
+.grid img {
+  width: 100%;
+  height: auto; /* Assure que les images gardent leur ratio */
+}
+
+/* 11. Flex layout pour la liste de films */
+.flex {
+  display: flex;
+  flex-wrap: wrap; /* Permet aux éléments de se déplacer à la ligne */
+  justify-content: space-between;
+}
+
+/* 12. Stylisation des listes */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
